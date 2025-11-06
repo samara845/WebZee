@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebZee</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            background-color:rgb(14, 13, 13);
+            
+            width: 100%;
+            
+        }
+        h1{
+            margin-inline-start: 60px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-variant: small-caps;
+            color: rgb(3, 250, 24);
+        }
+        input,button{
+        height: 30px;
+            
+        }
+        .search{
+         margin-left: 170px;
+         
+         
+        }
+        button{
+            border-radius: 35px;
+            background-color: rgb(8, 8, 8);
+            color: rgb(10, 255, 2);
+            border: 1px solid rgb(12, 255, 4);
+            
+            
+        
+            
+        }
+        .btn{
+            margin-left: 130px;
+        
+        }
+        input{
+            width: 550px;
+            border-radius: 35px;
+            border: 1px solid rgb(15, 179, 1);
+            background-color: black;
+            color: white;
+        }
+
+        .banner{
+            height: 300px;
+            max-width: 100%;
+            
+            color: rgb(1, 247, 22);
+            font-size: 55px;
+            font-weight: bold;
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            font-style: italic; 
+        }
+        .para{
+            margin-left: 80px;
+    
+        }
+        .img{
+            height: 250px;
+            width: 400px;
+            border: 2px solid green;
+            border-radius: 35px;
+            margin-left: 20%;
+        }
+        .imgg{
+            height: 250px;
+            width: 120px;
+            border: 1.5px solid green;
+            border-radius: 30px;
+            margin-left: -60px;
+            margin-top: 140px;
+            background-color: black;
+        }
+        h2{
+            font-size: larger;
+            font-style: normal;
+            font-weight: lighter;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h4{
+            font-size: large;
+            font-style: normal;
+            font-weight: lighter;
+            margin: 20px;
+            margin-top: 85%;
+        }
+        p{
+            font-size: large;
+            font-weight: 10;
+            margin-left: 130px;
+        }
+        #p{
+            font-size: 10px;
+            font-style: normal;
+            margin-left: 15px;
+            
+        }
+        .items{
+        margin-top: 120px;
+            color: white;
+
+            
+        }
+        .item{
+            height: 200px;
+            width: 340px;
+            border: 0.5px solid green;
+            margin-left: 50px;
+            border-radius: 30px;
+            display: flex;
+            float: left;
+            
+
+            
+        }
+        h2{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 35%;
+        
+        }
+        .package{
+        
+            height: 550px;
+            width: 250px;
+            background-color: white;
+            margin-top: 1%;
+            border-radius: 35px;
+        }
+        .packages{
+            display: flex;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            height: 570px;
+            width: 800px;
+            margin-left: 6%;
+            
+        
+        }
+        .asert{
+            
+        
+    
+            height: 700px;
+            width: 900px;
+            border: 1px solid green;
+            border-radius: 35px;
+            margin-left: 13%;
+            margin-top: 20%;
+        }
+        h3{
+            color: rgb(3, 252, 3);
+            font-size: xx-large;
+            font-weight: bold;
+            margin-inline-start: 30%;
+        }
+        h5{
+            font-size: xx-large;
+            font-weight: bold;
+            background-color: green;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -2%;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 70px;
+            font-weight: bolder;
+        }
+
+        ul{
+            margin-top: -50px;
+        }
+        .pay{
+            
+            width: auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #btn{
+            margin-top: -10%;
+            border-radius: 0px;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(24, 253, 3);
+            background-color: rgb(5, 5, 5);
+            color: rgb(1, 235, 1);
+             font-weight: 900;
+              height: 50px;
+            width: auto;
+            border-radius: 30px;
+        }
+        #btnn{
+            margin-top: -20%;
+            border-radius: 0px;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           border: 1px solid rgb(24, 253, 3);
+            background-color: rgb(5, 5, 5);
+            color: rgb(1, 235, 1);
+             font-weight: 900;
+             text-decoration: none;
+              height: 50px;
+            width: auto;
+            border-radius: 30px;
+        }
+        #bt{
+            margin-top: 5%;
+             border-radius: 0px;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(24, 253, 3);
+            background-color: rgb(5, 5, 5);
+            color: rgb(1, 235, 1);
+            font-weight: 900;
+            height: 50px;
+            width: auto;
+            border-radius: 30px;
+        }
+        a{
+        text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="head"> <header>
+        <h1>WebZee</h1>
+        <div class="search">
+            <form action="">
+                <input type="search" placeholder="Search Web.....">
+            <button style="margin-left: -55px;">Search</button>
+            </form>
+        </div>
+        <div class="btn">
+            <button style="width: 100px; height: 40px;">Signup</button>
+        </div>
+    </header>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+    <div class="banner">
+       
+                <div class="para">
+                 WebZee Build Your 
+            <br>   Website & App
+            <br>  <p style="color: white; font-size: 14px; font-weight: bold; margin-left: 6px;">Get ready made Websites & Apps with Source Code and Learn Coding..... </p></div>
+             <div class="img">
+                <h2>WebZee.in</h2>
+                <p>Get Website and App</p>
+             </div>
+             <div class="imgg">
+                <h4>WebZee.in</h4>
+                <p id="p">Affordable Websites</p>
+             </div>
+
+    </div>
+    
+<div class="items">
+    <h1>Readymade Websites</h1>
+    <br>
+    <div class="item">
+        <h2>Portfolio</h2>
+    </div>
+    <div class="item">
+        <h2>E-Commerce</h2>
+    </div>
+    <!-- <div class="item">
+        <h2>Trading Website</h2>
+    </div>
+    <div class="item" style="margin-top: 40px;">
+        <h2>Admin Portals</h2>
+    </div> -->
+</div>
+<br>
+<br>
+<div class="asert">
+    <div class="title">
+    <h3>WebZee Price Packages</h3>
+</div>
+<div class="packages">
+    
+    <div class="package">
+    <h5>BASIC</h5>
+    <ul>
+        <li>Get A Static Website</li>
+        <li>Attractive UI/UX Design</li>
+        <li>Exelent Colour Combinations</li>
+        <li>NO DataBase</li>
+        <li>No Functions</li>
+    </ul>
+    <div class="pay">
+       <a href="new.html"> <button id="bt">2,999/- Only</button></a>
+    </div>
+</div>
+<div class="package">
+    <h5>STANDARD</h5>
+    <ul>
+        <li>Get A Full Functional Website </li>
+        <li>Attractive & Responsive UI/UX Design</li>
+        <li>Exelent Colour Combinations</li>
+        <li>Basic level Database </li>
+        <li>No Domain & Web Hosting</li>
+    </ul>
+     <div class="pay">
+        <a href="new.html"><button id="btn">5,499/- Only</button></a>
+    </div>
+</div>
+<div class="package">
+    <h5>PRO</h5>
+    <ul>
+        <li>Get A Full Stake Finctional Website</li>
+        <li>Attractive & Responsive UI/UX Design</li>
+        <li>Exelent Colour Combinations</li>
+        <li>Proper Backend & Database</li>
+        <li>Domain & Web Hosting</li>
+    </ul>
+     <div class="pay">
+       <a href="new.html"> <button id="btnn">7,999/- Only</button></a>
+    </div>
+</div>
+</div>
+</div>
+  
+</body>
+</html>
