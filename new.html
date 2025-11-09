@@ -4,50 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-            margin: 0px;
-        }
-        form{
-            color: white;
-            border: 1px solid green;
-            border-radius: 35px;
-            height: 740px;
-            width: 400px;
-            margin: 2% 15%;
-        }
-        h1{
-            color: green;
-            font-size: xx-large;
-            margin-left: 100px;
-        }
-        
-        input,label{
-            width: 250px;
-            height: 30px;
-            border-radius: 30px;
-            margin-left: 60px;
-            margin-top: 5px;
-        }
-        p{
-            margin-left: 30px;
-        }
-        img{
-            margin-left: 105px;
-            
-        }
-        #file{
-            margin-left: 100px;
-            border-radius: 50px;
-            width: 70%;
-            
-        }
-        h4,button{
-            margin-left: 20%;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <form action="">
@@ -68,16 +25,12 @@
         <label for="Select"> Your Selected Package</label>
         <br>
         <input type="text" placeholder="ex:- Basic" required>
-        <p>Pay Advance payment according to your Selected Package....</p>
-        <img src="C:\Users\samar\Documents\QR code.jpg" height="150" width="150" alt="QR code">
         <br>
-        <input id="file" type="file" required>
-        <h4>Upload Your Payment Screenshot</h4>
-        <button style="margin-left: 37%; background-color: black; color: green; border: 1px solid green; height: 30px; width: 60px; ">Submit</button>
+        <label for="requirement">Your requirement</label>
+        <textarea name="requirement" id="requirement"> Describe Your Website requirements in detail....
+        </textarea>
         <br>
-        <br>
-        <pre  style="margin-left: 20px;">Note:- Upload valid screenshot and pay according to
-             your selected package...</pre>
+        <button>Submit</button>
        </div>
         
 
